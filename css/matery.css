@@ -102,7 +102,7 @@ blockquote {
 
 pre {
     padding: 2rem 1rem 1rem 3rem !important;
-    border-radius: 0.35rem;
+    border-radius: 1.5rem;
     tab-size: 4;
     background-color: #272822;
 }
@@ -184,7 +184,7 @@ code {
 
 pre code {
     padding: 0;
-    color: #e8eaf6;
+    color: #e8eaf6e0;
     background-color: #272822;
 }
 
@@ -315,13 +315,13 @@ header .side-nav .mobile-head {
 }
 
 header .side-nav .mobile-head img {
-    margin-top: 30px;
+    margin-top: 10px;
     width: 75px;
     height: 75px;
 }
 
 header .side-nav .mobile-head .logo-name {
-    margin-top: -30px;
+    margin-top: -40px;
     padding-left: 10px;
     font-size: 1.5rem;
 }
@@ -801,7 +801,7 @@ header .go-back i {
 .recommend .post-card .post-categories .category {
     padding: 0 8px;
     color: hsla(0, 0%, 100%, .7) !important;
-    font-size: .75rem;
+    font-size: 1.75rem;
     font-weight: 500;
 }
 
@@ -810,15 +810,16 @@ header .go-back i {
 }
 
 .recommend .post-card .post-title {
-    height: 48px;
+    height: 80px;
     margin-top: 10px;
     margin-bottom: 5px;
+    font-size: 2.6rem;
+    line-height: 4rem;
 }
 
 .recommend .post-card .post-description {
-    margin: 20px auto;
+    margin: 10px auto;
     max-width: 500px;
-    height: 65px;
     max-height: 65px;
     font-size: 14px;
     color: hsla(0, 0%, 100%, .78) !important;

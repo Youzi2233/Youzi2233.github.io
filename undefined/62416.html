@@ -18,17 +18,17 @@
 
 
     <title>欢迎来到柚の小屋 | 柚の小屋</title>
-    <link rel="icon" type="image/png" href="https://cdn.jsdelivr.net/gh/youzi2233/youzi2233.github.io/favicon.png">
+    <link rel="icon" type="image/png" href="/favicon.png">
 
-    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/youzi2233/youzi2233.github.io/libs/awesome/css/all.min.css">
-    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/youzi2233/youzi2233.github.io/libs/materialize/materialize.min.css">
-    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/youzi2233/youzi2233.github.io/libs/aos/aos.min.css">
-    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/youzi2233/youzi2233.github.io/libs/animate/animate.min.css">
-    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/youzi2233/youzi2233.github.io/libs/lightGallery/css/lightgallery.min.css">
-    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/youzi2233/youzi2233.github.io/css/matery.css">
-    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/youzi2233/youzi2233.github.io/css/my.min.css">
+    <link rel="stylesheet" type="text/css" href="/libs/awesome/css/all.min.css">
+    <link rel="stylesheet" type="text/css" href="/libs/materialize/materialize.min.css">
+    <link rel="stylesheet" type="text/css" href="/libs/aos/aos.css">
+    <link rel="stylesheet" type="text/css" href="/libs/animate/animate.min.css">
+    <link rel="stylesheet" type="text/css" href="/libs/lightGallery/css/lightgallery.min.css">
+    <link rel="stylesheet" type="text/css" href="/css/matery.css">
+    <link rel="stylesheet" type="text/css" href="/css/my.css">
 
-    <script src="https://cdn.jsdelivr.net/gh/youzi2233/youzi2233.github.io/libs/jquery/jquery-3.6.0.min.js"></script>
+    <script src="/libs/jquery/jquery-3.6.0.min.js"></script>
 
 <meta name="generator" content="Hexo 6.0.0">
 <style>.github-emoji { position: relative; display: inline-block; width: 1.2em; min-height: 1.2em; overflow: hidden; vertical-align: top; color: transparent; }  .github-emoji > span { position: relative; z-index: 10; }  .github-emoji img, .github-emoji .fancybox { margin: 0 !important; padding: 0 !important; border: none !important; outline: none !important; text-decoration: none !important; user-select: none !important; cursor: auto !important; }  .github-emoji img { height: 1.2em !important; width: 1.2em !important; position: absolute !important; left: 50% !important; top: 50% !important; transform: translate(-50%, -50%) !important; user-select: none !important; cursor: auto !important; } .github-emoji-fallback { color: inherit; } .github-emoji-fallback img { opacity: 0 !important; }</style>
@@ -55,7 +55,7 @@
             <div class="brand-logo">
                 <a href="/" class="waves-effect waves-light">
                     
-                    <img src="https://cdn.jsdelivr.net/gh/youzi2233/youzi2233.github.io/medias/logo.png" class="logo-img" alt="LOGO">
+                    <img src="/medias/logo.png" class="logo-img" alt="LOGO">
                     
                     <span class="logo-span">柚の小屋</span>
                 </a>
@@ -154,12 +154,12 @@
 
     <div class="mobile-head bg-color">
         
-        <img src="https://cdn.jsdelivr.net/gh/youzi2233/youzi2233.github.io/medias/logo.png" class="logo-img circle responsive-img">
+        <img src="/medias/logo.png" class="logo-img circle responsive-img">
         
         <div class="logo-name">柚の小屋</div>
         <div class="logo-desc">
             
-            生命太短暂,不要去做一些根本没有人想要的东西。
+            活出自己想要的模样！
             
         </div>
     </div>
@@ -337,10 +337,104 @@
 
 
 
-<main class="container content">
+<main class="post-container content">
 
     
-    <!-- 文章内容详情 -->
+    <link rel="stylesheet" href="/libs/tocbot/tocbot.min.css">
+<style>
+    #articleContent h1::before,
+    #articleContent h2::before,
+    #articleContent h3::before,
+    #articleContent h4::before,
+    #articleContent h5::before,
+    #articleContent h6::before {
+        display: block;
+        content: " ";
+        height: 100px;
+        margin-top: -100px;
+        visibility: hidden;
+    }
+
+    #articleContent :focus {
+        outline: none;
+    }
+
+    .toc-fixed {
+        position: fixed;
+        top: 64px;
+    }
+
+    .toc-widget {
+        width: 345px;
+        padding-left: 20px;
+    }
+
+    .toc-widget .toc-title {
+        padding: 35px 0 15px 17px;
+        font-size: 1.5rem;
+        font-weight: bold;
+        line-height: 1.5rem;
+    }
+
+    .toc-widget ol {
+        padding: 0;
+        list-style: none;
+    }
+
+    #toc-content {
+        padding-bottom: 30px;
+        overflow: auto;
+    }
+
+    #toc-content ol {
+        padding-left: 10px;
+    }
+
+    #toc-content ol li {
+        padding-left: 10px;
+    }
+
+    #toc-content .toc-link:hover {
+        color: #42b983;
+        font-weight: 700;
+        text-decoration: underline;
+    }
+
+    #toc-content .toc-link::before {
+        background-color: transparent;
+        max-height: 25px;
+
+        position: absolute;
+        right: 23.5vw;
+        display: block;
+    }
+
+    #toc-content .is-active-link {
+        color: #42b983;
+    }
+
+    #floating-toc-btn {
+        position: fixed;
+        right: 15px;
+        bottom: 76px;
+        padding-top: 15px;
+        margin-bottom: 0;
+        z-index: 998;
+    }
+
+    #floating-toc-btn .btn-floating {
+        width: 48px;
+        height: 48px;
+    }
+
+    #floating-toc-btn .btn-floating i {
+        line-height: 48px;
+        font-size: 1.4rem;
+    }
+</style>
+<div class="row">
+    <div id="main-content" class="col s12 m12 l9">
+        <!-- 文章内容详情 -->
 <div id="artDetail">
     <div class="card">
         <div class="card-content article-info">
@@ -399,18 +493,31 @@
         <hr class="clearfix">
 
         
+        <!-- 是否加载使用自带的 prismjs. -->
+        <link rel="stylesheet" href="/libs/prism/prism.css">
+        
 
         
 
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <h2 id="引言"><a href="#引言" class="headerlink" title="引言"></a>引言</h2><pre><code>欢迎来到柚子的小屋，这里记录本人学习所记录的各种笔记
-当然了也会偶尔也会分享一些小事情
-</code></pre>
-<h3 id="目标"><a href="#目标" class="headerlink" title="目标"></a>目标</h3><pre><code>前端、后端这两条路同时走下去
-</code></pre>
-<h3 id="结语"><a href="#结语" class="headerlink" title="结语"></a>结语</h3><pre><code>努力，加油，不要放弃
-</code></pre>
+                <h3 id="引言"><a href="#引言" class="headerlink" title="引言"></a>引言</h3><blockquote>
+<p>欢迎来到柚子的小屋<br>这里记录本人学习所记录的各种笔记<br>当然了偶尔也会分享一些小事情，希望能对你有所帮助</p>
+</blockquote>
+<h3 id="使用"><a href="#使用" class="headerlink" title="使用"></a>使用</h3><blockquote>
+<p>你可以通过‘分类’、‘标签’以及‘导航’搜索查看各类知识的笔记</p>
+</blockquote>
+<h3 id="关于本站"><a href="#关于本站" class="headerlink" title="关于本站"></a>关于本站</h3><blockquote>
+<p>本站是基于Hexo+matery搭建的个人博客静态网页<br>如果你也想拥有一个属于自己的个人博客，那么可以在B站或者百度搜索学习<br>不仅Hexo，还有Wordpress、Hugo、Halo等等也可以有同样的效果进行搭建</p>
+</blockquote>
+<p>下面推荐B站两个大佬的教学视频：</p>
+<ul>
+<li><a target="_blank" rel="noopener" href="https://www.bilibili.com/video/BV1Yb411a7ty?spm_id_from=333.999.0.0">CodeSheep：手把手教你从0开始搭建自己的个人博客</a></li>
+<li><a target="_blank" rel="noopener" href="https://www.bilibili.com/video/BV14q4y1R7XM?spm_id_from=333.999.0.0">程序员鱼皮：手把手带你从0搭建个人博客</a></li>
+</ul>
+<h3 id="结语"><a href="#结语" class="headerlink" title="结语"></a>结语</h3><blockquote>
+<p>生命很短暂，一定要活出自己想要的模样，加油哦！</p>
+</blockquote>
 
                 
             </div>
@@ -427,7 +534,7 @@
                     </i>
                 </span>
                 <span class="reprint-info">
-                    <a href="/about" rel="external nofollow noreferrer">柚 子</a>
+                    <a href="/about" rel="external nofollow noreferrer">柚子</a>
                 </span>
             </div>
             <div class="reprint__type">
@@ -450,7 +557,7 @@
                     本博客所有文章除特別声明外，均采用
                     <a href="https://creativecommons.org/licenses/by/4.0/deed.zh" rel="external nofollow noreferrer" target="_blank">CC BY 4.0</a>
                     许可协议。转载请注明来源
-                    <a href="/about" target="_blank">柚 子</a>
+                    <a href="/about" target="_blank">柚子</a>
                     !
                 </span>
             </div>
@@ -487,12 +594,12 @@
                     
                 </div>
                 <div class="post_share" style="zoom: 80%; width: fit-content; display: inline-block; float: right; margin: -0.15rem 0;">
-                    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/youzi2233/youzi2233.github.io/libs/share/css/share.min.css">
+                    <link rel="stylesheet" type="text/css" href="/libs/share/css/share.min.css">
 <div id="article-share">
 
     
     <div class="social-share" data-sites="qq,qzone,wechat,weibo" data-wechat-qrcode-helper="<p>微信扫一扫即可分享！</p>"></div>
-    <script src="https://cdn.jsdelivr.net/gh/youzi2233/youzi2233.github.io/libs/share/js/social-share.min.js"></script>
+    <script src="/libs/share/js/social-share.min.js"></script>
     
 
     
@@ -506,8 +613,8 @@
     </div>
 
     
-        <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/youzi2233/youzi2233.github.io/libs/gitalk/gitalk.min.css">
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/youzi2233/youzi2233.github.io/css/my-gitalk.css">
+        <link rel="stylesheet" href="/libs/gitalk/gitalk.css">
+<link rel="stylesheet" href="/css/my-gitalk.css">
 
 <div class="card gitalk-card" data-aos="fade-up">
     <div class="comment_headling" style="font-size: 20px; font-weight: 700; position: relative; padding-left: 20px; top: 15px; padding-bottom: 5px;">
@@ -517,7 +624,7 @@
     <div id="gitalk-container" class="card-content"></div>
 </div>
 
-<script src="https://cdn.jsdelivr.net/gh/youzi2233/youzi2233.github.io/libs/gitalk/gitalk.min.js"></script>
+<script src="/libs/gitalk/gitalk.min.js"></script>
 <script>
     let gitalk = new Gitalk({
         clientID: '',
@@ -668,22 +775,116 @@
 
 
 <!-- 代码块功能依赖 -->
-<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/youzi2233/youzi2233.github.io/libs/codeBlock/codeBlockFuction.js"></script>
+<script type="text/javascript" src="/libs/codeBlock/codeBlockFuction.js"></script>
 
 <!-- 代码语言 -->
 
-<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/youzi2233/youzi2233.github.io/libs/codeBlock/codeLang.js"></script>
+<script type="text/javascript" src="/libs/codeBlock/codeLang.js"></script>
 
 
 <!-- 代码块复制 -->
 
-<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/youzi2233/youzi2233.github.io/libs/codeBlock/codeCopy.js"></script>
+<script type="text/javascript" src="/libs/codeBlock/codeCopy.js"></script>
 
 
 <!-- 代码块收缩 -->
 
-<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/youzi2233/youzi2233.github.io/libs/codeBlock/codeShrink.js"></script>
+<script type="text/javascript" src="/libs/codeBlock/codeShrink.js"></script>
 
+
+    </div>
+    <div id="toc-aside" class="expanded col l3 hide-on-med-and-down">
+        <div class="toc-widget card" style="background-color: white;">
+            <div class="toc-title"><i class="far fa-list-alt"></i>&nbsp;&nbsp;目录</div>
+            <div id="toc-content"></div>
+        </div>
+    </div>
+</div>
+
+<!-- TOC 悬浮按钮. -->
+
+<div id="floating-toc-btn" class="hide-on-med-and-down">
+    <a class="btn-floating btn-large bg-color">
+        <i class="fas fa-list-ul"></i>
+    </a>
+</div>
+
+
+<script src="/libs/tocbot/tocbot.min.js"></script>
+<script>
+    $(function () {
+        tocbot.init({
+            tocSelector: '#toc-content',
+            contentSelector: '#articleContent',
+            headingsOffset: -($(window).height() * 0.4 - 45),
+            collapseDepth: Number('0'),
+            headingSelector: 'h2, h3, h4'
+        });
+
+        // modify the toc link href to support Chinese.
+        let i = 0;
+        let tocHeading = 'toc-heading-';
+        $('#toc-content a').each(function () {
+            $(this).attr('href', '#' + tocHeading + (++i));
+        });
+
+        // modify the heading title id to support Chinese.
+        i = 0;
+        $('#articleContent').children('h2, h3, h4').each(function () {
+            $(this).attr('id', tocHeading + (++i));
+        });
+
+        // Set scroll toc fixed.
+        let tocHeight = parseInt($(window).height() * 0.4 - 64);
+        let $tocWidget = $('.toc-widget');
+        $(window).scroll(function () {
+            let scroll = $(window).scrollTop();
+            /* add post toc fixed. */
+            if (scroll > tocHeight) {
+                $tocWidget.addClass('toc-fixed');
+            } else {
+                $tocWidget.removeClass('toc-fixed');
+            }
+        });
+
+        
+        /* 修复文章卡片 div 的宽度. */
+        let fixPostCardWidth = function (srcId, targetId) {
+            let srcDiv = $('#' + srcId);
+            if (srcDiv.length === 0) {
+                return;
+            }
+
+            let w = srcDiv.width();
+            if (w >= 450) {
+                w = w + 21;
+            } else if (w >= 350 && w < 450) {
+                w = w + 18;
+            } else if (w >= 300 && w < 350) {
+                w = w + 16;
+            } else {
+                w = w + 14;
+            }
+            $('#' + targetId).width(w);
+        };
+
+        // 切换TOC目录展开收缩的相关操作.
+        const expandedClass = 'expanded';
+        let $tocAside = $('#toc-aside');
+        let $mainContent = $('#main-content');
+        $('#floating-toc-btn .btn-floating').click(function () {
+            if ($tocAside.hasClass(expandedClass)) {
+                $tocAside.removeClass(expandedClass).hide();
+                $mainContent.removeClass('l9');
+            } else {
+                $tocAside.addClass(expandedClass).show();
+                $mainContent.addClass('l9');
+            }
+            fixPostCardWidth('artDetail', 'prenext-posts');
+        });
+        
+    });
+</script>
 
     
 
@@ -694,7 +895,7 @@
 
     <footer class="page-footer bg-color">
     
-        <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/youzi2233/youzi2233.github.io/libs/aplayer/APlayer.min.css">
+        <link rel="stylesheet" href="/libs/aplayer/APlayer.min.css">
 <style>
     .aplayer .aplayer-lrc p {
         
@@ -744,8 +945,8 @@
     </div>
 </div>
 
-<script src="https://cdn.jsdelivr.net/gh/youzi2233/youzi2233.github.io/libs/aplayer/APlayer.min.js"></script>
-<script src="https://cdn.jsdelivr.net/gh/youzi2233/youzi2233.github.io/libs/aplayer/Meting.min.js"></script>
+<script src="/libs/aplayer/APlayer.min.js"></script>
+<script src="/libs/aplayer/Meting.min.js"></script>
 
     
 
@@ -756,7 +957,7 @@
             
                 <span id="year">2019-2022</span>
             
-            <a href="/about" target="_blank">柚 子</a>
+            <a href="/about" target="_blank">柚子</a>
             |&nbsp;Powered by&nbsp;<a href="https://hexo.io/" target="_blank">Hexo</a>
             |&nbsp;Theme&nbsp;<a href="https://github.com/blinkfox/hexo-theme-matery" target="_blank">Matery</a>
             <br>
@@ -832,12 +1033,12 @@
 </div>
 
 
-    <script src="https://cdn.jsdelivr.net/gh/youzi2233/youzi2233.github.io/libs/materialize/materialize.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/gh/youzi2233/youzi2233.github.io/libs/masonry/masonry.pkgd.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/gh/youzi2233/youzi2233.github.io/libs/aos/aos.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/gh/youzi2233/youzi2233.github.io/libs/scrollprogress/scrollProgress.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/gh/youzi2233/youzi2233.github.io/libs/lightGallery/js/lightgallery-all.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/gh/youzi2233/youzi2233.github.io/js/matery.min.js"></script>
+    <script src="/libs/materialize/materialize.min.js"></script>
+    <script src="/libs/masonry/masonry.pkgd.min.js"></script>
+    <script src="/libs/aos/aos.js"></script>
+    <script src="/libs/scrollprogress/scrollProgress.min.js"></script>
+    <script src="/libs/lightGallery/js/lightgallery-all.min.js"></script>
+    <script src="/js/matery.js"></script>
 
     
 
@@ -847,7 +1048,7 @@
             // 只在桌面版网页启用特效
             var windowWidth = $(window).width();
             if (windowWidth > 768) {
-                document.write('<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/youzi2233/youzi2233.github.io/libs/others/sakura.min.js"><\/script>');
+                document.write('<script type="text/javascript" src="/libs/others/sakura.js"><\/script>');
             }
         </script>
     
@@ -860,7 +1061,7 @@
 
      
         <script src="https://ssl.captcha.qq.com/TCaptcha.js"></script>
-        <script src="https://cdn.jsdelivr.net/gh/youzi2233/youzi2233.github.io/libs/others/TencentCaptcha.js"></script>
+        <script src="/libs/others/TencentCaptcha.js"></script>
         <button id="TencentCaptcha" data-appid="xxxxxxxxxx" data-cbfn="callback" type="button" hidden></button>
     
 
@@ -883,10 +1084,10 @@
 </script>
 
     
-    <script src="https://cdn.jsdelivr.net/gh/youzi2233/youzi2233.github.io/libs/others/clicklove.min.js" async="async"></script>
+    <script src="/libs/others/clicklove.js" async="async"></script>
     
     
-    <script async src="https://cdn.jsdelivr.net/gh/youzi2233/youzi2233.github.io/libs/others/busuanzi.pure.mini.js"></script>
+    <script async src="/libs/others/busuanzi.pure.mini.js"></script>
     
 
     
@@ -902,9 +1103,9 @@
     
 
     
-    <script src="https://cdn.jsdelivr.net/gh/youzi2233/youzi2233.github.io/libs/instantpage/instantpage.js" type="module"></script>
+    <script src="/libs/instantpage/instantpage.js" type="module"></script>
     
 
-<script src="/live2dw/lib/L2Dwidget.min.js?094cbace49a39548bed64abff5988b05"></script><script>L2Dwidget.init({"pluginRootPath":"live2dw/","pluginJsPath":"lib/","pluginModelPath":"assets/","tagMode":false,"debug":false,"log":false});</script></body>
+<script src="https://unpkg.com/live2d-widget@^3.1.3/lib/L2Dwidget.min.js"></script><script>L2Dwidget.init({"pluginRootPath":"live2dw/","pluginJsPath":"lib/","pluginModelPath":"assets/","tagMode":false,"debug":false,"log":false});</script></body>
 
 </html>
