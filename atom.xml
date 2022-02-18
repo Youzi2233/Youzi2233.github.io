@@ -6,7 +6,7 @@
   <link href="https://youzi2233.github.io/atom.xml" rel="self"/>
   
   <link href="https://youzi2233.github.io/"/>
-  <updated>2022-02-18T08:38:44.639Z</updated>
+  <updated>2022-02-18T17:22:15.257Z</updated>
   <id>https://youzi2233.github.io/</id>
   
   <author>
@@ -15,6 +15,33 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Javascript_ES6新特性(1)</title>
+    <link href="https://youzi2233.github.io/undefined/40125.html"/>
+    <id>https://youzi2233.github.io/undefined/40125.html</id>
+    <published>2022-02-18T16:56:20.000Z</published>
+    <updated>2022-02-18T17:22:15.257Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h2 id=&quot;let与const的用法&quot;&gt;&lt;a href=&quot;#let与const的用法&quot; class=&quot;headerlink&quot;</summary>
+        
+      
+    
+    
+    
+    <category term="Javascript" scheme="https://youzi2233.github.io/categories/Javascript/"/>
+    
+    
+    <category term="javascript" scheme="https://youzi2233.github.io/tags/javascript/"/>
+    
+    <category term="ES6新特性" scheme="https://youzi2233.github.io/tags/ES6%E6%96%B0%E7%89%B9%E6%80%A7/"/>
+    
+  </entry>
   
   <entry>
     <title>欢迎来到柚の小屋</title>

@@ -4,6 +4,33 @@
   
     
     <entry>
+      <title>Javascript_ES6新特性(1)</title>
+      <link href="/undefined/40125.html"/>
+      <url>/undefined/40125.html</url>
+      
+        <content type="html"><![CDATA[<h2 id="let与const的用法"><a href="#let与const的用法" class="headerlink" title="let与const的用法"></a>let与const的用法</h2><ol><li><p>let和var的区别</p><blockquote><p>var定义的变量没有块级作用域的概念</p><p>let定义的变量有块级作用域</p></blockquote><pre><code>if(true){    let a = 10;}console.log(a); //这时候是可以输出a的，如果换成let，是会报错的，因为受块级作用域的影响，a变成了局部变量</code></pre></li><li><p>let和var哪个好？</p><blockquote><p>let好，所以放弃使用var。</p></blockquote></li><li><p>const的使用</p><blockquote><p>定义的变量不能被修改，但是如果定义的是对象，那么里面的属性值可以修改，只是不能修改整个对象。</p></blockquote><pre><code>const PI = 3.1415926; //定义不修改的常量const obj = {    name:"小明",    age:16}//obj = {name:"小红"}  //会报错const.name = "小红"console.log(obj) //结果name为小红，属性值被修改</code></pre></li></ol><h2 id="结构赋值"><a href="#结构赋值" class="headerlink" title="结构赋值"></a>结构赋值</h2><ol><li><p>数组的结构赋值</p><pre><code>let [a,b] = [10,20] //实现了赋值，a=10，b=20</code></pre><blockquote><p>用法：比如实现一个交换，让a=20，b=10，传统方法会有一个临时变量temp进行保存其中一个值，然后进行交换，但如果用结构赋值会简单很多</p></blockquote><pre><code>let [a,b] = [10,20];[a,b] = [b,a];console.log(a,b)  //输出结果：20 10</code></pre></li><li><p>对象的结构赋值（常用）</p><pre><code>let {name,age} = {    name:"小明",    age:16,    friend:"小红"}console.log(name); //小明console.log(age);  //16</code></pre><pre><code>function createStudent(){    let name = "小明";    let age = 16;    let friend = "小红";    return{        name:name,        age:age,        friend:friend    }}//let obj = createStudent();//console.log(obj.name) //Es5写法，拿到'name'let {name} = createStudent();console.log(name) //Es6写法，代码简洁明了</code></pre></li></ol><h2 id="箭头函数的用法"><a href="#箭头函数的用法" class="headerlink" title="箭头函数的用法"></a>箭头函数的用法</h2><ul><li>()中定义参数，如果只有一个参数，可以不写括号</li><li>{}中写函数体，如果函数体中只有返回值，可以不写return</li></ul><pre><code>//const fun1 = x =&gt; x; //只有一个参数//const fun = function(){//    return 100;//}const fun = () =&gt; 100;console.log(fun());//两者的作用是一样的</code></pre><p>箭头函数和普通函数的区别：</p><blockquote><p>this指向不同<br>普通函数，谁调用这个函数，this就指向谁<br>箭头函数，在哪里定义函数，this就指向谁</p></blockquote><pre><code>let obj = {    name:"小明",    age:16,//  sayName(){//        console.log(this.name)//这里this可以输出小明，下面就不能了//        setTimeout(function(){//            console.log('我是${this.name}')//这个this指向window            //Es6模板字符串，跟"我是"+this.name相同//        },500)//    }    sayName(){        setTimeout(() =&gt;{            console.log(this.name) //this指向obj，可以输出name        },500)    }}</code></pre>]]></content>
+      
+      
+      <categories>
+          
+          <category> Javascript </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> javascript </tag>
+            
+            <tag> ES6新特性 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>欢迎来到柚の小屋</title>
       <link href="/undefined/62416.html"/>
       <url>/undefined/62416.html</url>
