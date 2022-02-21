@@ -4,8 +4,8 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="keywords" content="欢迎">
-    <meta name="description" content="此文章仅作欢迎及开篇测试使用">
+    <meta name="keywords" content="Javascript_ES6新特性(2), 柚の小屋">
+    <meta name="description" content="Javascript中ES6的新特性">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <meta name="renderer" content="webkit|ie-stand|ie-comp">
@@ -17,7 +17,7 @@
     <!-- Global site tag (gtag.js) - Google Analytics -->
 
 
-    <title>欢迎来到柚の小屋 | 柚の小屋</title>
+    <title>Javascript_ES6新特性(2) | 柚の小屋</title>
     <link rel="icon" type="image/png" href="/favicon.png">
 
     <link rel="stylesheet" type="text/css" href="/libs/awesome/css/all.min.css">
@@ -323,12 +323,12 @@
 
 
 
-<div class="bg-cover pd-header post-cover" style="background-image: url('/imgs/hello.jpg')">
+<div class="bg-cover pd-header post-cover" style="background-image: url('/imgs/es6.jpg')">
     <div class="container" style="right: 0px;left: 0px;">
         <div class="row">
             <div class="col s12 m12 l12">
                 <div class="brand">
-                    <h1 class="description center-align post-title">欢迎来到柚の小屋</h1>
+                    <h1 class="description center-align post-title">Javascript_ES6新特性(2)</h1>
                 </div>
             </div>
         </div>
@@ -444,12 +444,12 @@
                     
                     <div class="article-tag">
                         
-                            <a href="/tags/%E6%B5%8B%E8%AF%95/">
-                                <span class="chip bg-color">测试</span>
+                            <a href="/tags/javascript/">
+                                <span class="chip bg-color">javascript</span>
                             </a>
                         
-                            <a href="/tags/%E6%AC%A2%E8%BF%8E/">
-                                <span class="chip bg-color">欢迎</span>
+                            <a href="/tags/ES6%E6%96%B0%E7%89%B9%E6%80%A7/">
+                                <span class="chip bg-color">ES6新特性</span>
                             </a>
                         
                     </div>
@@ -460,8 +460,8 @@
                     <div class="post-cate">
                         <i class="fas fa-bookmark fa-fw icon-category"></i>
                         
-                            <a href="/categories/Hello/" class="post-category">
-                                Hello
+                            <a href="/categories/Javascript/" class="post-category">
+                                Javascript
                             </a>
                         
                     </div>
@@ -473,7 +473,7 @@
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-minus fa-fw"></i>发布日期:&nbsp;&nbsp;
-                    2022-02-17
+                    2022-02-21
                 </div>
                 
 
@@ -499,23 +499,146 @@
 
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <h3 id="引言"><a href="#引言" class="headerlink" title="引言"></a>引言</h3><blockquote>
-<p>欢迎来到柚子的小屋<br>这里记录本人学习所记录的各种笔记<br>当然了偶尔也会分享一些小事情，希望能对你有所帮助</p>
+                <h2 id="第七种数据类型，Symbol"><a href="#第七种数据类型，Symbol" class="headerlink" title="第七种数据类型，Symbol()"></a>第七种数据类型，Symbol()</h2><ol>
+<li><p>基础语法</p>
+<blockquote>
+<p>js的数据类型：数值，字符串，布尔，对象，null，undefined，Symbol<br>symbol可以当做对象的属性名，对象：key value对</p>
 </blockquote>
-<h3 id="使用"><a href="#使用" class="headerlink" title="使用"></a>使用</h3><blockquote>
-<p>你可以通过‘分类’、‘标签’以及‘导航’搜索查看各类知识的笔记</p>
-</blockquote>
-<h3 id="关于本站"><a href="#关于本站" class="headerlink" title="关于本站"></a>关于本站</h3><blockquote>
-<p>本站是基于Hexo+matery搭建的个人博客静态网页<br>如果你也想拥有一个属于自己的个人博客，那么可以在B站或者百度搜索学习<br>不仅Hexo，还有Wordpress、Hugo、Halo等等也可以有同样的效果进行搭建</p>
-</blockquote>
-<p>下面推荐B站两个大佬的教学视频：</p>
+<pre class=" language-javascript"><code class="language-javascript"><span class="token comment" spellcheck="true">//const level1 = Symbol("level");</span>
+<span class="token comment" spellcheck="true">//const level2 = Symbol("level");</span>
+<span class="token comment" spellcheck="true">//console.log(level1 === level2) //false，下面可以简写</span>
+<span class="token keyword">const</span> student <span class="token operator">=</span> <span class="token punctuation">{</span>
+    name<span class="token punctuation">:</span><span class="token string">"小明"</span><span class="token punctuation">,</span>
+    age<span class="token punctuation">:</span><span class="token number">16</span><span class="token punctuation">,</span>
+<span class="token comment" spellcheck="true">//    [level]:"优秀" //es6新特性：变量当key要加[]</span>
+    <span class="token punctuation">[</span><span class="token function">Symbol</span><span class="token punctuation">(</span><span class="token string">"level"</span><span class="token punctuation">)</span><span class="token punctuation">]</span><span class="token punctuation">:</span><span class="token string">"优秀"</span><span class="token punctuation">,</span>
+    <span class="token punctuation">[</span><span class="token function">Symbol</span><span class="token punctuation">(</span><span class="token string">"level"</span><span class="token punctuation">)</span><span class="token punctuation">]</span><span class="token punctuation">:</span><span class="token string">"有钱"</span>
+<span class="token punctuation">}</span>
+</code></pre>
 <ul>
-<li><a target="_blank" rel="noopener" href="https://www.bilibili.com/video/BV1Yb411a7ty?spm_id_from=333.999.0.0">CodeSheep：手把手教你从0开始搭建自己的个人博客</a></li>
-<li><a target="_blank" rel="noopener" href="https://www.bilibili.com/video/BV14q4y1R7XM?spm_id_from=333.999.0.0">程序员鱼皮：手把手带你从0搭建个人博客</a></li>
+<li><p>symbol属性不能被for…in获取</p>
+</li>
+<li><p>以及Object.keys()，Object.getOwnPropertyNames()</p>
+<pre class=" language-javascript"><code class="language-javascript"><span class="token keyword">for</span><span class="token punctuation">(</span><span class="token keyword">let</span> pro <span class="token keyword">in</span> student<span class="token punctuation">)</span><span class="token punctuation">{</span>
+    console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>pro<span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment" spellcheck="true">//只输出两个key：name和age</span>
+<span class="token punctuation">}</span>
+<span class="token comment" spellcheck="true">//下面俩都是输出[name,age]这个数组</span>
+console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>Objcet<span class="token punctuation">.</span><span class="token function">keys</span><span class="token punctuation">(</span>student<span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token keyword">let</span> pros <span class="token operator">=</span> Object<span class="token punctuation">.</span><span class="token function">getOwnPropertyNames</span><span class="token punctuation">(</span>student<span class="token punctuation">)</span><span class="token punctuation">;</span>
+console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>pros<span class="token punctuation">)</span>
+</code></pre>
+</li>
 </ul>
-<h3 id="结语"><a href="#结语" class="headerlink" title="结语"></a>结语</h3><blockquote>
-<p>生命很短暂，一定要活出自己想要的模样，加油哦！</p>
+</li>
+<li><p>如何拿到Symbol的值</p>
+<ul>
+<li>通过Object.getOwnPropertySymbols()拿到Symbol属性名</li>
+<li>再通过for…of得到每个属性名</li>
+</ul>
+<pre class=" language-javascript"><code class="language-javascript"><span class="token keyword">let</span> symList <span class="token operator">=</span> Object<span class="token punctuation">.</span><span class="token function">getOwnPropertySymbols</span><span class="token punctuation">(</span>student<span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token comment" spellcheck="true">//symList:[Symbol("level"),Symbol("level")]</span>
+<span class="token keyword">for</span><span class="token punctuation">(</span><span class="token keyword">let</span> i <span class="token keyword">of</span> symList<span class="token punctuation">)</span><span class="token punctuation">{</span>
+    console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>student<span class="token punctuation">[</span>pro<span class="token punctuation">]</span><span class="token punctuation">)</span><span class="token punctuation">;</span><span class="token comment" spellcheck="true">//优秀，有点</span>
+<span class="token punctuation">}</span>
+</code></pre>
+</li>
+<li><p>内置值</p>
+<ul>
+<li>Symbol.iterator：对象被for…of循环时，会调用Symbol.iterator方法，返回该对象的默认遍历器<pre class=" language-javascript"><code class="language-javascript"><span class="token keyword">const</span> list <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token number">1</span><span class="token punctuation">,</span><span class="token number">2</span><span class="token punctuation">,</span><span class="token number">3</span><span class="token punctuation">,</span><span class="token number">4</span><span class="token punctuation">,</span><span class="token number">5</span><span class="token punctuation">,</span><span class="token number">6</span><span class="token punctuation">]</span><span class="token punctuation">;</span>
+console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>student<span class="token punctuation">[</span>Symbol<span class="token punctuation">.</span>iterator<span class="token punctuation">]</span><span class="token punctuation">)</span><span class="token punctuation">;</span><span class="token comment" spellcheck="true">//undefined</span>
+console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>list<span class="token punctuation">[</span>Symbol<span class="token punctuation">.</span>iterator<span class="token punctuation">]</span><span class="token punctuation">)</span><span class="token punctuation">;</span><span class="token comment" spellcheck="true">//f values(){[native code]}</span>
+<span class="token comment" spellcheck="true">//如果对象有Symbol.iterator这个属性</span>
+<span class="token comment" spellcheck="true">//这个对象就可以被for...of遍历</span>
+<span class="token keyword">for</span><span class="token punctuation">(</span><span class="token keyword">let</span> item <span class="token keyword">of</span> student<span class="token punctuation">)</span><span class="token punctuation">{</span>
+  console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>item<span class="token punctuation">)</span><span class="token punctuation">;</span><span class="token comment" spellcheck="true">//报错，student is not a iterator</span>
+<span class="token punctuation">}</span>
+<span class="token keyword">for</span><span class="token punctuation">(</span><span class="token keyword">let</span> item <span class="token keyword">of</span> list<span class="token punctuation">)</span><span class="token punctuation">{</span>
+  console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>item<span class="token punctuation">)</span><span class="token punctuation">;</span><span class="token comment" spellcheck="true">//1,2,3,4,5,6</span>
+<span class="token punctuation">}</span>
+</code></pre>
+</li>
+</ul>
+</li>
+</ol>
+<h2 id="回调地狱与promise"><a href="#回调地狱与promise" class="headerlink" title="回调地狱与promise"></a>回调地狱与promise</h2><ol>
+<li><p>回调地狱</p>
+<pre class=" language-javascript"><code class="language-javascript"><span class="token comment" spellcheck="true">//获取奶茶,火锅的方法</span>
+<span class="token keyword">function</span> <span class="token function">getTea</span><span class="token punctuation">(</span>fn<span class="token punctuation">)</span><span class="token punctuation">{</span>
+    <span class="token function">setTimeout</span><span class="token punctuation">(</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">=</span><span class="token operator">></span> <span class="token punctuation">{</span>
+        <span class="token function">fn</span><span class="token punctuation">(</span><span class="token string">"奶茶"</span><span class="token punctuation">)</span>
+    <span class="token punctuation">}</span><span class="token punctuation">,</span><span class="token number">1000</span><span class="token punctuation">)</span>
+<span class="token punctuation">}</span>
+<span class="token keyword">function</span> <span class="token function">getHotpot</span><span class="token punctuation">(</span>fn<span class="token punctuation">)</span><span class="token punctuation">{</span>
+    <span class="token function">setTimeout</span><span class="token punctuation">(</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">=</span><span class="token operator">></span> <span class="token punctuation">{</span>
+        <span class="token function">fn</span><span class="token punctuation">(</span><span class="token string">"火锅"</span><span class="token punctuation">)</span>
+    <span class="token punctuation">}</span><span class="token punctuation">,</span><span class="token number">2000</span><span class="token punctuation">)</span>
+<span class="token punctuation">}</span>
+<span class="token comment" spellcheck="true">//调用获取奶茶的方法，回调函数获取数据值</span>
+<span class="token comment" spellcheck="true">//getTea(function(data){</span>
+<span class="token comment" spellcheck="true">//      console.log(data);</span>
+<span class="token comment" spellcheck="true">//})</span>
+<span class="token comment" spellcheck="true">//要求：先吃火锅，然后喝奶茶(顺序)</span>
+<span class="token function">getHotpot</span><span class="token punctuation">(</span><span class="token keyword">function</span><span class="token punctuation">(</span>data<span class="token punctuation">)</span><span class="token punctuation">{</span>
+    console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>data<span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token function">getTea</span><span class="token punctuation">(</span><span class="token keyword">function</span><span class="token punctuation">(</span>data<span class="token punctuation">)</span><span class="token punctuation">{</span>
+        console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>data<span class="token punctuation">)</span>
+  <span class="token punctuation">}</span><span class="token punctuation">)</span>
+<span class="token punctuation">}</span><span class="token punctuation">)</span>
+<span class="token comment" spellcheck="true">//实现第2秒吃火锅，再过1秒喝奶茶</span>
+<span class="token comment" spellcheck="true">//需要层层嵌套，以后数据多了，维护性很差，这叫回调地狱</span>
+</code></pre>
+</li>
+<li><p>promise</p>
+<pre class=" language-javascript"><code class="language-javascript"><span class="token comment" spellcheck="true">//resolve可以把异步数据传递出来</span>
+<span class="token keyword">let</span> p <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">Promise</span><span class="token punctuation">(</span><span class="token keyword">function</span><span class="token punctuation">(</span>resolve<span class="token punctuation">)</span><span class="token punctuation">{</span>
+    <span class="token function">resolve</span><span class="token punctuation">(</span><span class="token string">"hello world"</span><span class="token punctuation">)</span>
+<span class="token punctuation">}</span><span class="token punctuation">)</span>
+<span class="token comment" spellcheck="true">//通过then拿到异步数据</span>
+p<span class="token punctuation">.</span><span class="token function">then</span><span class="token punctuation">(</span><span class="token keyword">function</span><span class="token punctuation">(</span>data<span class="token punctuation">)</span><span class="token punctuation">{</span>
+    console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>data<span class="token punctuation">)</span> <span class="token comment" spellcheck="true">//hello world</span>
+<span class="token punctuation">}</span><span class="token punctuation">)</span>
+</code></pre>
+<p>那么就可以改造刚刚的函数了</p>
+<pre class=" language-javascript"><code class="language-javascript"><span class="token comment" spellcheck="true">//获取奶茶,火锅的方法</span>
+<span class="token keyword">function</span> <span class="token function">getTea</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
+    <span class="token keyword">return</span> <span class="token keyword">new</span> <span class="token class-name">Promise</span><span class="token punctuation">(</span><span class="token keyword">function</span><span class="token punctuation">(</span>resolve<span class="token punctuation">)</span><span class="token punctuation">{</span>
+        <span class="token function">setTimeout</span><span class="token punctuation">(</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">=</span><span class="token operator">></span> <span class="token punctuation">{</span>
+            <span class="token function">resolve</span><span class="token punctuation">(</span><span class="token string">"奶茶"</span><span class="token punctuation">)</span>
+        <span class="token punctuation">}</span><span class="token punctuation">,</span><span class="token number">1000</span><span class="token punctuation">)</span>
+    <span class="token punctuation">}</span><span class="token punctuation">)</span>
+<span class="token punctuation">}</span>
+<span class="token keyword">function</span> <span class="token function">getHotpot</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
+    <span class="token keyword">return</span> <span class="token keyword">new</span> <span class="token class-name">Promise</span><span class="token punctuation">(</span><span class="token keyword">function</span><span class="token punctuation">(</span>resolve<span class="token punctuation">)</span><span class="token punctuation">{</span>
+        <span class="token function">setTimeout</span><span class="token punctuation">(</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">=</span><span class="token operator">></span> <span class="token punctuation">{</span>
+            <span class="token function">resolve</span><span class="token punctuation">(</span><span class="token string">"火锅"</span><span class="token punctuation">)</span>
+        <span class="token punctuation">}</span><span class="token punctuation">,</span><span class="token number">2000</span><span class="token punctuation">)</span>
+    <span class="token punctuation">}</span><span class="token punctuation">)</span>
+<span class="token punctuation">}</span>
+<span class="token comment" spellcheck="true">//先吃火锅，再喝奶茶</span>
+<span class="token function">getHotpot</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">then</span><span class="token punctuation">(</span><span class="token keyword">function</span><span class="token punctuation">(</span>data<span class="token punctuation">)</span><span class="token punctuation">{</span>
+    console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>data<span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token keyword">return</span> <span class="token function">getTea</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span><span class="token comment" spellcheck="true">//再return一个Promise对象</span>
+<span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">then</span><span class="token punctuation">(</span><span class="token keyword">function</span><span class="token punctuation">(</span>data<span class="token punctuation">)</span><span class="token punctuation">{</span>
+    console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>data<span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span><span class="token punctuation">)</span>
+</code></pre>
+</li>
+<li><p>async函数(ES8)</p>
+<blockquote>
+<p>虽然promise解决了回调地狱的通点，好了很多，但还是不友好，那么用async函数就可以更好的解决啦</p>
 </blockquote>
+<pre class=" language-javascript"><code class="language-javascript"><span class="token keyword">async</span> <span class="token keyword">function</span> <span class="token function">getData</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">{</span><span class="token number">4</span>
+    <span class="token comment" spellcheck="true">//直接获取resolve传递出来的异步数据</span>
+    <span class="token keyword">let</span> hotPot <span class="token operator">=</span> <span class="token keyword">await</span> <span class="token function">getHotpot</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>hotPot<span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token keyword">let</span> tea <span class="token operator">=</span> <span class="token keyword">await</span> <span class="token function">getTea</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>tea<span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token comment" spellcheck="true">//这两个函数还是刚刚改造好的，返回的是Promise对象</span>
+    <span class="token comment" spellcheck="true">//这样看起来就跟同步代码一样，更清爽了</span>
+<span class="token punctuation">}</span>
+</code></pre>
+</li>
+</ol>
 
                 
             </div>
@@ -542,7 +665,7 @@
                     </i>
                 </span>
                 <span class="reprint-info">
-                    <a href="https://youzi2233.github.io/undefined/62416.html">https://youzi2233.github.io/undefined/62416.html</a>
+                    <a href="https://youzi2233.github.io/undefined/1.html">https://youzi2233.github.io/undefined/1.html</a>
                 </span>
             </div>
             <div class="reprint__notice">
@@ -580,12 +703,12 @@
                     
                         <div class="article-tag">
                             
-                                <a href="/tags/%E6%B5%8B%E8%AF%95/">
-                                    <span class="chip bg-color">测试</span>
+                                <a href="/tags/javascript/">
+                                    <span class="chip bg-color">javascript</span>
                                 </a>
                             
-                                <a href="/tags/%E6%AC%A2%E8%BF%8E/">
-                                    <span class="chip bg-color">欢迎</span>
+                                <a href="/tags/ES6%E6%96%B0%E7%89%B9%E6%80%A7/">
+                                    <span class="chip bg-color">ES6新特性</span>
                                 </a>
                             
                         </div>
@@ -633,9 +756,63 @@
 <article id="prenext-posts" class="prev-next articles">
     <div class="row article-row">
         
-        <div class="article col s12 m6" data-aos="fade-up">
+        <div class="article col s12 m6" data-aos="fade-up" data-aos="fade-up">
             <div class="article-badge left-badge text-color">
-                <i class="fas fa-chevron-left"></i>&nbsp;上一篇</div>
+                <i class="far fa-dot-circle"></i>&nbsp;本篇
+            </div>
+            <div class="card">
+                <a href="/undefined/1.html">
+                    <div class="card-image">
+                        
+                        <img src="/imgs/es6.jpg" class="responsive-img" alt="Javascript_ES6新特性(2)">
+                        
+                        <span class="card-title">Javascript_ES6新特性(2)</span>
+                    </div>
+                </a>
+                <div class="card-content article-content">
+                    <div class="summary block-with-text">
+                        
+                            Javascript中ES6的新特性
+                        
+                    </div>
+                    <div class="publish-info">
+                            <span class="publish-date">
+                                <i class="far fa-clock fa-fw icon-date"></i>2022-02-21
+                            </span>
+                        <span class="publish-author">
+                            
+                            <i class="fas fa-bookmark fa-fw icon-category"></i>
+                            
+                            <a href="/categories/Javascript/" class="post-category">
+                                    Javascript
+                                </a>
+                            
+                            
+                        </span>
+                    </div>
+                </div>
+
+                
+                <div class="card-action article-tags">
+                    
+                    <a href="/tags/javascript/">
+                        <span class="chip bg-color">javascript</span>
+                    </a>
+                    
+                    <a href="/tags/ES6%E6%96%B0%E7%89%B9%E6%80%A7/">
+                        <span class="chip bg-color">ES6新特性</span>
+                    </a>
+                    
+                </div>
+                
+            </div>
+        </div>
+        
+        
+        <div class="article col s12 m6" data-aos="fade-up">
+            <div class="article-badge right-badge text-color">
+                下一篇&nbsp;<i class="fas fa-chevron-right"></i>
+            </div>
             <div class="card">
                 <a href="/undefined/40125.html">
                     <div class="card-image">
@@ -652,9 +829,9 @@
                         
                     </div>
                     <div class="publish-info">
-                        <span class="publish-date">
-                            <i class="far fa-clock fa-fw icon-date"></i>2022-02-19
-                        </span>
+                            <span class="publish-date">
+                                <i class="far fa-clock fa-fw icon-date"></i>2022-02-19
+                            </span>
                         <span class="publish-author">
                             
                             <i class="fas fa-bookmark fa-fw icon-category"></i>
@@ -676,59 +853,6 @@
                     
                     <a href="/tags/ES6%E6%96%B0%E7%89%B9%E6%80%A7/">
                         <span class="chip bg-color">ES6新特性</span>
-                    </a>
-                    
-                </div>
-                
-            </div>
-        </div>
-        
-        
-        <div class="article col s12 m6" data-aos="fade-up">
-            <div class="article-badge right-badge text-color">
-                本篇&nbsp;<i class="far fa-dot-circle"></i>
-            </div>
-            <div class="card">
-                <a href="/undefined/62416.html">
-                    <div class="card-image">
-                        
-                        <img src="/imgs/hello.jpg" class="responsive-img" alt="欢迎来到柚の小屋">
-                        
-                        <span class="card-title">欢迎来到柚の小屋</span>
-                    </div>
-                </a>
-                <div class="card-content article-content">
-                    <div class="summary block-with-text">
-                        
-                            此文章仅作欢迎及开篇测试使用
-                        
-                    </div>
-                    <div class="publish-info">
-                            <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2022-02-17
-                            </span>
-                        <span class="publish-author">
-                            
-                            <i class="fas fa-bookmark fa-fw icon-category"></i>
-                            
-                            <a href="/categories/Hello/" class="post-category">
-                                    Hello
-                                </a>
-                            
-                            
-                        </span>
-                    </div>
-                </div>
-
-                
-                <div class="card-action article-tags">
-                    
-                    <a href="/tags/%E6%B5%8B%E8%AF%95/">
-                        <span class="chip bg-color">测试</span>
-                    </a>
-                    
-                    <a href="/tags/%E6%AC%A2%E8%BF%8E/">
-                        <span class="chip bg-color">欢迎</span>
                     </a>
                     
                 </div>
