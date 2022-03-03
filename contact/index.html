@@ -380,7 +380,6 @@
                 <div class="tag-title center-align">
                     <i class="fas fa-comments"></i>&nbsp;&nbsp;留言板
                 </div>
-                
             </div>
             <!--valine评论弹幕-->
             
@@ -705,69 +704,6 @@
 <!--酷Q推送-->
 
 
-                <script type="text/javascript">
-                    AV.init({
-                        appId: 'Ubs3P9V7yGKAkaw63yuiQk5m-gzGzoHsz',
-                        appKey: 'U2qvypiFjwQV7EuLX27OtAhX'
-                    });
-
-                    $(function() {
-                        do_barrager();
-                        async function do_barrager() {
-                            let lists = [];
-                            //查询弹幕
-                            const query = new AV.Query('barrager');
-                            const barrager = await query.find().then((barrager) => {
-                                lists = barrager;
-                            })
-                            let length = lists.length;
-                            let index = 0;
-                            const timer = setInterval(() => {
-                                if (index === length) {
-                                    clearInterval(timer);
-                                    do_barrager()
-                                } else {
-                                    let obj = lists[index]
-                                    let jsonObject = eval('(' + JSON.stringify(obj) + ')');
-                                    $('body').barrager({
-                                        'img': '/medias/barrager/' + Math.floor(Math.random() * 3) + ".png",
-                                        'href': jsonObject.href,
-                                        'info': jsonObject.info,
-                                        'speed': jsonObject.speed
-                                    });
-                                    index++;
-                                }
-                            }, 500)
-                        }
-                    });
-
-                    //发送弹幕
-                    function  run(){
-                        let info = $('input[name=info]').val();
-                        (info === '' ) ?  info='hello world' : info=info;
-                        let href = $('input[name=href]').val();
-                        (href === '' ) ?  href='https://github.com/blinkfox/hexo-theme-matery' : href=href;
-                        let speed = parseInt($('input[name=speed]').val());
-                        if(speed > 20 || speed < 5)
-                            speed = Math.floor(Math.random() * 10) + 5;
-                        const Barrager = AV.Object.extend('barrager');
-                        const barrager = new Barrager();
-                        barrager.set('href', href);
-                        barrager.set('info', info);
-                        barrager.set('speed', speed);
-                        barrager.save().then((todo) => {
-                            $(" input[ name='info' ] ").val("")
-                            $(" input[ name='href' ] ").val("")
-                            $(" input[ name='speed' ] ").val("")
-                        });
-                    }
-
-                    function  clear_barrage()
-                    {
-                        $.fn.barrager.removeAll();
-                    }
-
-                </script>
             
         </div>
 
@@ -1042,7 +978,6 @@ $(function () {
     <script src="/libs/scrollprogress/scrollProgress.min.js"></script>
     <script src="/libs/lightGallery/js/lightgallery-all.min.js"></script>
     <script src="/js/matery.js"></script>
-    <script src="https://youzi2233.github.io/live2d/autoload.js"><script>
 
     
 
@@ -1109,6 +1044,7 @@ $(function () {
     
     <script src="/libs/instantpage/instantpage.js" type="module"></script>
     
+
 </body>
 
 </html>
