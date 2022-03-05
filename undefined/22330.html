@@ -18,18 +18,18 @@
 
 
     <title>Vue2.0学习—基础知识 | 柚の小屋</title>
-    <link rel="icon" type="image/png" href="/favicon.png">
+    <link rel="icon" type="image/png" href="https://cdn.jsdelivr.net/gh/youzi2233/youzi2233.github.io/favicon.png">
 
-    <link rel="stylesheet" type="text/css" href="/libs/awesome/css/all.min.css">
-    <link rel="stylesheet" type="text/css" href="/libs/materialize/materialize.min.css">
-    <link rel="stylesheet" type="text/css" href="/libs/aos/aos.css">
-    <link rel="stylesheet" type="text/css" href="/libs/animate/animate.min.css">
-    <link rel="stylesheet" type="text/css" href="/libs/lightGallery/css/lightgallery.min.css">
-    <link rel="stylesheet" type="text/css" href="/css/matery.css">
-    <link rel="stylesheet" type="text/css" href="/css/my.css">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/youzi2233/youzi2233.github.io/libs/awesome/css/all.min.css">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/youzi2233/youzi2233.github.io/libs/materialize/materialize.min.css">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/youzi2233/youzi2233.github.io/libs/aos/aos.css">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/youzi2233/youzi2233.github.io/libs/animate/animate.min.css">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/youzi2233/youzi2233.github.io/libs/lightGallery/css/lightgallery.min.css">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/youzi2233/youzi2233.github.io/css/matery.css">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/youzi2233/youzi2233.github.io/css/my.css">
     <script src="https://cdn.jsdelivr.net/npm/jquery/dist/jquery.min.js"></script>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/font-awesome/css/font-awesome.min.css"/>
-    <script src="/libs/jquery/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/youzi2233/youzi2233.github.io/libs/jquery/jquery-3.6.0.min.js"></script>
 <!--自定义看板娘-->
     <script src="https://cdn.jsdelivr.net/npm/jquery/dist/jquery.min.js"></script>
     <script src="/live2d/autoload.js"></script>
@@ -61,7 +61,7 @@
             <div class="brand-logo">
                 <a href="/" class="waves-effect waves-light">
                     
-                    <img src="/medias/logo.png" class="logo-img" alt="LOGO">
+                    <img src="https://cdn.jsdelivr.net/gh/youzi2233/youzi2233.github.io/medias/logo.png" class="logo-img" alt="LOGO">
                     
                     <span class="logo-span">柚の小屋</span>
                 </a>
@@ -160,7 +160,7 @@
 
     <div class="mobile-head bg-color">
         
-        <img src="/medias/logo.png" class="logo-img circle responsive-img">
+        <img src="https://cdn.jsdelivr.net/gh/youzi2233/youzi2233.github.io/medias/logo.png" class="logo-img circle responsive-img">
         
         <div class="logo-name">柚の小屋</div>
         <div class="logo-desc">
@@ -346,7 +346,7 @@
 <main class="post-container content">
 
     
-    <link rel="stylesheet" href="/libs/tocbot/tocbot.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/youzi2233/youzi2233.github.io/libs/tocbot/tocbot.min.css">
 <style>
     #articleContent h1::before,
     #articleContent h2::before,
@@ -512,7 +512,7 @@
                 <h2 id="Vue模板语法"><a href="#Vue模板语法" class="headerlink" title="Vue模板语法"></a>Vue模板语法</h2><ol>
 <li><p>插值语法:</p>
 <p>功能：用于解析标签体内容</p>
-<p>写法：，xxx是js表达式，且可以直接读取到data中的所有属性。</p>
+<p>写法：，其中xxx是js表达式，且可以直接读取到data中的所有属性。</p>
 </li>
 <li><p>指令语法：</p>
 <p>功能：用于解析标签（包括：标签属性、标签体内容、绑定事件……）</p>
@@ -575,7 +575,9 @@
 <li><p>条件渲染：</p>
 <ol>
 <li>v-if<br>写法：<br>​    （1）v-if=”表达式”<br>​    （2）v-else-if=”表达式”<br>​    （3）v-else=”表达式”<br>适用于：切换频率较低的场景。<br>特点：不展示的DOM元素直接被移除<br>注意：v-if可以和：v-else-if、v-else一起使用，但要求结构不能被“打断”。</li>
-<li>v-show：<br>写法：v-show=”表达式”<br>适用于：切换频率较高的场景<br>特点：不展示的DOM元素未被移除，仅仅是使用样式隐藏掉<pre class=" language-html"><code class="language-html"><span class="token comment" spellcheck="true">&lt;!-- template标签只能配合v-if使用 --></span>
+<li>v-show：<br>写法：v-show=”表达式”<br>适用于：切换频率较高的场景<br>特点：不展示的DOM元素未被移除，仅仅是使用样式隐藏掉</li>
+</ol>
+<pre class=" language-html"><code class="language-html"><span class="token comment" spellcheck="true">&lt;!-- template标签只能配合v-if使用 --></span>
 <span class="token comment" spellcheck="true">&lt;!-- 该标签作用是条件成立时显示以下结构，不会留下该标签痕迹 --></span>
 <span class="token comment" spellcheck="true">&lt;!-- 不同于再套一个div，会破坏原有结构 --></span>
 <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>template</span> <span class="token attr-name">v-if</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>n<span class="token punctuation">=</span><span class="token punctuation">=</span><span class="token punctuation">=</span>1<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>
@@ -583,8 +585,6 @@
  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>h2</span><span class="token punctuation">></span></span>北京<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>h2</span><span class="token punctuation">></span></span>
 <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>template</span><span class="token punctuation">></span></span>
 </code></pre>
-</li>
-</ol>
 </li>
 <li><p>列表渲染：</p>
 <p>v-for指令：</p>
@@ -660,27 +660,28 @@
 <li><p>v-once指令：</p>
 <ol>
 <li>v-once所在节点在初次动态渲染后，就监视为静态内容了。</li>
-<li>以后数据的改变不会引起v-once所在结构的更新，可以用于优化性能<pre class=" language-html"><code class="language-html"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">id</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>root<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>
+<li>以后数据的改变不会引起v-once所在结构的更新，可以用于优化性能</li>
+</ol>
+<pre class=" language-html"><code class="language-html"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">id</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>root<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>
  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>h2</span> <span class="token attr-name">v-once</span><span class="token punctuation">></span></span>初始化的n值是：{{n}}<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>h2</span><span class="token punctuation">></span></span>
  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>h2</span><span class="token punctuation">></span></span>当前的n值是：{{n}}<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>h2</span><span class="token punctuation">></span></span>
  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>button</span> <span class="token attr-name">@click</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>n++<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>点我n+1<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>button</span><span class="token punctuation">></span></span>
 <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">></span></span>
 </code></pre>
 </li>
-</ol>
-</li>
 <li><p>v-pre指令：</p>
 <ol>
 <li>跳过其所在节点的编译过程</li>
-<li>可利用它跳过：没有使用指令语法，没有使用插值语法的节点，会加快编译。<pre class=" language-html"><code class="language-html"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">id</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>root<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>
+<li>可利用它跳过：没有使用指令语法，没有使用插值语法的节点，会加快编译。</li>
+</ol>
+<pre class=" language-html"><code class="language-html"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">id</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>root<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>
  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>h2</span> <span class="token attr-name">v-pre</span><span class="token punctuation">></span></span>Vue其实很简单<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>h2</span><span class="token punctuation">></span></span>
 <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">></span></span>
 </code></pre>
-<h3 id="自定义指令"><a href="#自定义指令" class="headerlink" title="自定义指令"></a>自定义指令</h3></li>
-</ol>
 </li>
-<li><p>定义语法：</p>
-<p>（1）局部指令：</p>
+</ol>
+<h3 id="自定义指令"><a href="#自定义指令" class="headerlink" title="自定义指令"></a>自定义指令</h3><ol>
+<li><p>定义语法：<br>（1）局部指令：</p>
 <pre class=" language-js"><code class="language-js"><span class="token keyword">new</span> <span class="token class-name">Vue</span><span class="token punctuation">(</span><span class="token punctuation">{</span>
   directives<span class="token punctuation">:</span><span class="token punctuation">{</span>指令名：配置对象<span class="token punctuation">}</span>
 <span class="token punctuation">}</span><span class="token punctuation">)</span>
@@ -852,7 +853,7 @@ Object<span class="token punctuation">.</span><span class="token function">defin
     <span class="token punctuation">}</span>
 <span class="token punctuation">}</span><span class="token punctuation">)</span>
 </code></pre>
-<p><img src="/..%5Cimgs%5C%E6%95%B0%E6%8D%AE%E4%BB%A3%E7%90%86.png"></p>
+<img src="../imgs/v-数据代理.png">
 </li>
 <li><p>Vue中的数据代理</p>
 <blockquote>
@@ -1120,7 +1121,7 @@ Object<span class="token punctuation">.</span><span class="token function">defin
     <span class="token punctuation">}</span>
 <span class="token punctuation">}</span><span class="token punctuation">)</span>
 </code></pre>
-<p><img src="/..%5Cimgs%5C%E7%9B%91%E8%A7%86%E6%95%B0%E6%8D%AE.png"></p>
+<img src="../imgs/v-监视数据.png">
 
                 
             </div>
@@ -1197,12 +1198,12 @@ Object<span class="token punctuation">.</span><span class="token function">defin
                     
                 </div>
                 <div class="post_share" style="zoom: 80%; width: fit-content; display: inline-block; float: right; margin: -0.15rem 0;">
-                    <link rel="stylesheet" type="text/css" href="/libs/share/css/share.min.css">
+                    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/youzi2233/youzi2233.github.io/libs/share/css/share.min.css">
 <div id="article-share">
 
     
     <div class="social-share" data-sites="qq,qzone,wechat,weibo" data-wechat-qrcode-helper="<p>微信扫一扫即可分享！</p>"></div>
-    <script src="/libs/share/js/social-share.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/youzi2233/youzi2233.github.io/libs/share/js/social-share.min.js"></script>
     
 
     
@@ -1469,8 +1470,8 @@ Object<span class="token punctuation">.</span><span class="token function">defin
     </div>
 </div>
 
-<!-- <script src="/libs/valine/av-min.js"></script> -->
-<script src="/libs/valine/Valine.min.js"></script>
+<!-- <script src="https://cdn.jsdelivr.net/gh/youzi2233/youzi2233.github.io/libs/valine/av-min.js"></script> -->
+<script src="https://cdn.jsdelivr.net/gh/youzi2233/youzi2233.github.io/libs/valine/Valine.min.js"></script>
 <script>
    new Valine({
         el: '#vcomments',
@@ -1709,21 +1710,21 @@ Object<span class="token punctuation">.</span><span class="token function">defin
 
 
 <!-- 代码块功能依赖 -->
-<script type="text/javascript" src="/libs/codeBlock/codeBlockFuction.js"></script>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/youzi2233/youzi2233.github.io/libs/codeBlock/codeBlockFuction.js"></script>
 
 <!-- 代码语言 -->
 
-<script type="text/javascript" src="/libs/codeBlock/codeLang.js"></script>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/youzi2233/youzi2233.github.io/libs/codeBlock/codeLang.js"></script>
 
 
 <!-- 代码块复制 -->
 
-<script type="text/javascript" src="/libs/codeBlock/codeCopy.js"></script>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/youzi2233/youzi2233.github.io/libs/codeBlock/codeCopy.js"></script>
 
 
 <!-- 代码块收缩 -->
 
-<script type="text/javascript" src="/libs/codeBlock/codeShrink.js"></script>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/youzi2233/youzi2233.github.io/libs/codeBlock/codeShrink.js"></script>
 
 
     </div>
@@ -1744,7 +1745,7 @@ Object<span class="token punctuation">.</span><span class="token function">defin
 </div>
 
 
-<script src="/libs/tocbot/tocbot.min.js"></script>
+<script src="https://cdn.jsdelivr.net/gh/youzi2233/youzi2233.github.io/libs/tocbot/tocbot.min.js"></script>
 <script>
     $(function () {
         tocbot.init({
@@ -2069,12 +2070,12 @@ $(function () {
 </div>
 
 
-    <script src="/libs/materialize/materialize.min.js"></script>
-    <script src="/libs/masonry/masonry.pkgd.min.js"></script>
-    <script src="/libs/aos/aos.js"></script>
-    <script src="/libs/scrollprogress/scrollProgress.min.js"></script>
-    <script src="/libs/lightGallery/js/lightgallery-all.min.js"></script>
-    <script src="/js/matery.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/youzi2233/youzi2233.github.io/libs/materialize/materialize.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/youzi2233/youzi2233.github.io/libs/masonry/masonry.pkgd.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/youzi2233/youzi2233.github.io/libs/aos/aos.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/youzi2233/youzi2233.github.io/libs/scrollprogress/scrollProgress.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/youzi2233/youzi2233.github.io/libs/lightGallery/js/lightgallery-all.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/youzi2233/youzi2233.github.io/js/matery.js"></script>
 
     
 
@@ -2084,7 +2085,7 @@ $(function () {
             // 只在桌面版网页启用特效
             var windowWidth = $(window).width();
             if (windowWidth > 768) {
-                document.write('<script type="text/javascript" src="/libs/others/sakura.js"><\/script>');
+                document.write('<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/youzi2233/youzi2233.github.io/libs/others/sakura.js"><\/script>');
             }
         </script>
     
@@ -2097,7 +2098,7 @@ $(function () {
 
      
         <script src="https://ssl.captcha.qq.com/TCaptcha.js"></script>
-        <script src="/libs/others/TencentCaptcha.js"></script>
+        <script src="https://cdn.jsdelivr.net/gh/youzi2233/youzi2233.github.io/libs/others/TencentCaptcha.js"></script>
         <button id="TencentCaptcha" data-appid="xxxxxxxxxx" data-cbfn="callback" type="button" hidden></button>
     
 
@@ -2120,10 +2121,10 @@ $(function () {
 </script>
 
     
-    <script src="/libs/others/clicklove.js" async="async"></script>
+    <script src="https://cdn.jsdelivr.net/gh/youzi2233/youzi2233.github.io/libs/others/clicklove.js" async="async"></script>
     
     
-    <script async src="/libs/others/busuanzi.pure.mini.js"></script>
+    <script async src="https://cdn.jsdelivr.net/gh/youzi2233/youzi2233.github.io/libs/others/busuanzi.pure.mini.js"></script>
     
 
     
@@ -2139,7 +2140,7 @@ $(function () {
     
 
     
-    <script src="/libs/instantpage/instantpage.js" type="module"></script>
+    <script src="https://cdn.jsdelivr.net/gh/youzi2233/youzi2233.github.io/libs/instantpage/instantpage.js" type="module"></script>
     
 
 </body>
