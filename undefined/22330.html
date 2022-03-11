@@ -1052,24 +1052,25 @@ Object<span class="token punctuation">.</span><span class="token function">defin
 <span class="token comment" spellcheck="true">&lt;!-- 绑定style样式--对象写法 --></span>
 <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>basic<span class="token punctuation">"</span></span> <span class="token attr-name">:</span><span class="token style-attr language-css"><span class="token attr-name"><span class="token attr-name">style</span></span><span class="token punctuation">="</span><span class="token attr-value">styleObj</span><span class="token punctuation">"</span></span><span class="token punctuation">></span></span>{{name}}<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">></span></span> <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>br</span><span class="token punctuation">/></span></span>
 <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">></span></span>
-<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>script</span><span class="token punctuation">></span></span>
-    const vm = new Vue({
-        el:'#root',
-        data:{
-            name:'小明',
-            mood:'normol',
-            classArr:['demo1','demo2','demo3'],
-            classObj:{
-                demo1:false,
-                demo2:false,
-            },
-            styleObj:{
-                fontSize:'40px',
-                color:'red',
-                backgroundColor:'orange'  //两个单词需要驼峰命名
-            }
-        }
-    })
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>script</span><span class="token punctuation">></span></span><span class="token script language-javascript">
+    <span class="token keyword">const</span> vm <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">Vue</span><span class="token punctuation">(</span><span class="token punctuation">{</span>
+        el<span class="token punctuation">:</span><span class="token string">'#root'</span><span class="token punctuation">,</span>
+        data<span class="token punctuation">:</span><span class="token punctuation">{</span>
+            name<span class="token punctuation">:</span><span class="token string">'小明'</span><span class="token punctuation">,</span>
+            mood<span class="token punctuation">:</span><span class="token string">'normol'</span><span class="token punctuation">,</span>
+            classArr<span class="token punctuation">:</span><span class="token punctuation">[</span><span class="token string">'demo1'</span><span class="token punctuation">,</span><span class="token string">'demo2'</span><span class="token punctuation">,</span><span class="token string">'demo3'</span><span class="token punctuation">]</span><span class="token punctuation">,</span>
+            classObj<span class="token punctuation">:</span><span class="token punctuation">{</span>
+                demo1<span class="token punctuation">:</span><span class="token boolean">false</span><span class="token punctuation">,</span>
+                demo2<span class="token punctuation">:</span><span class="token boolean">false</span><span class="token punctuation">,</span>
+            <span class="token punctuation">}</span><span class="token punctuation">,</span>
+            styleObj<span class="token punctuation">:</span><span class="token punctuation">{</span>
+                fontSize<span class="token punctuation">:</span><span class="token string">'40px'</span><span class="token punctuation">,</span>
+                color<span class="token punctuation">:</span><span class="token string">'red'</span><span class="token punctuation">,</span>
+                backgroundColor<span class="token punctuation">:</span><span class="token string">'orange'</span>  <span class="token comment" spellcheck="true">//两个单词需要驼峰命名</span>
+            <span class="token punctuation">}</span>
+        <span class="token punctuation">}</span>
+    <span class="token punctuation">}</span><span class="token punctuation">)</span>
+</span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>script</span><span class="token punctuation">></span></span>
 </code></pre>
 <h2 id="Vue监视数据原理"><a href="#Vue监视数据原理" class="headerlink" title="Vue监视数据原理"></a>Vue监视数据原理</h2><blockquote>
 <p>Vue监视数据的原理：</p>
@@ -1568,7 +1569,7 @@ Object<span class="token punctuation">.</span><span class="token function">defin
                 <a href="/undefined/36550.html">
                     <div class="card-image">
                         
-                        <img src="/imgs/vue_basic.jpg" class="responsive-img" alt="Vue2.0学习—生命周期">
+                        <img src="/imgs/vue_life.jpg" class="responsive-img" alt="Vue2.0学习—生命周期">
                         
                         <span class="card-title">Vue2.0学习—生命周期</span>
                     </div>

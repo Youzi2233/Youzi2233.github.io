@@ -6,7 +6,7 @@
   <link href="https://youzi2233.github.io/atom.xml" rel="self"/>
   
   <link href="https://youzi2233.github.io/"/>
-  <updated>2022-03-05T15:19:48.467Z</updated>
+  <updated>2022-03-11T05:00:57.851Z</updated>
   <id>https://youzi2233.github.io/</id>
   
   <author>
@@ -17,11 +17,38 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>Vue2.0学习—组件式编程</title>
+    <link href="https://youzi2233.github.io/undefined/52753.html"/>
+    <id>https://youzi2233.github.io/undefined/52753.html</id>
+    <published>2022-03-11T04:47:10.000Z</published>
+    <updated>2022-03-11T05:00:57.851Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h2 id=&quot;模块与组件、模块化与组件化&quot;&gt;&lt;a href=&quot;#模块与组件、模块化与组件化&quot; class=&quot;headerlink&quot; title=&quot;模块与组件、模块化与组件化&quot;&gt;&lt;/a&gt;模块与组件、模块化与组件化&lt;/h2&gt;&lt;h3 id=&quot;1-模块&quot;&gt;&lt;a</summary>
+        
+      
+    
+    
+    
+    <category term="Vue" scheme="https://youzi2233.github.io/categories/Vue/"/>
+    
+    
+    <category term="Vue" scheme="https://youzi2233.github.io/tags/Vue/"/>
+    
+    <category term="Vue2.0" scheme="https://youzi2233.github.io/tags/Vue2-0/"/>
+    
+  </entry>
+  
+  <entry>
     <title>Vue2.0学习—生命周期</title>
     <link href="https://youzi2233.github.io/undefined/36550.html"/>
     <id>https://youzi2233.github.io/undefined/36550.html</id>
     <published>2022-03-05T15:10:07.000Z</published>
-    <updated>2022-03-05T15:19:48.467Z</updated>
+    <updated>2022-03-11T05:01:38.683Z</updated>
     
     
       
@@ -48,7 +75,7 @@
     <link href="https://youzi2233.github.io/undefined/22330.html"/>
     <id>https://youzi2233.github.io/undefined/22330.html</id>
     <published>2022-03-04T15:20:20.000Z</published>
-    <updated>2022-03-05T11:14:42.684Z</updated>
+    <updated>2022-03-09T07:19:22.652Z</updated>
     
     
       
