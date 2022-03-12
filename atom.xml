@@ -6,7 +6,7 @@
   <link href="https://youzi2233.github.io/atom.xml" rel="self"/>
   
   <link href="https://youzi2233.github.io/"/>
-  <updated>2022-03-11T05:00:57.851Z</updated>
+  <updated>2022-03-12T07:23:50.200Z</updated>
   <id>https://youzi2233.github.io/</id>
   
   <author>
@@ -17,11 +17,38 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>Vue2.0学习—vuex</title>
+    <link href="https://youzi2233.github.io/undefined/59327.html"/>
+    <id>https://youzi2233.github.io/undefined/59327.html</id>
+    <published>2022-03-12T07:10:07.000Z</published>
+    <updated>2022-03-12T07:23:50.200Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h3 id=&quot;概念&quot;&gt;&lt;a href=&quot;#概念&quot; class=&quot;headerlink&quot; title=&quot;概念&quot;&gt;&lt;/a&gt;概念&lt;/h3&gt;&lt;p&gt;​   </summary>
+        
+      
+    
+    
+    
+    <category term="Vue" scheme="https://youzi2233.github.io/categories/Vue/"/>
+    
+    
+    <category term="Vue" scheme="https://youzi2233.github.io/tags/Vue/"/>
+    
+    <category term="Vue2.0" scheme="https://youzi2233.github.io/tags/Vue2-0/"/>
+    
+  </entry>
+  
+  <entry>
     <title>Vue2.0学习—组件式编程</title>
     <link href="https://youzi2233.github.io/undefined/52753.html"/>
     <id>https://youzi2233.github.io/undefined/52753.html</id>
     <published>2022-03-11T04:47:10.000Z</published>
-    <updated>2022-03-11T05:00:57.851Z</updated>
+    <updated>2022-03-11T05:03:10.113Z</updated>
     
     
       
